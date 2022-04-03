@@ -1,23 +1,23 @@
 # student-management-system
 
-##Mohammad Naim Almani
-###GET all students
+## Mohammad Naim Almani
+### GET all students
 http://localhost:8080/student-management-system/api/v1/student	              
-###Get student by his last name 
+### Get student by his last name 
 http://localhost:8080/student-management-system/api/v1/student/lastname
-###GET student by id
+### GET student by id
 http://localhost:8080/student-management-system/api/v1/student/{id}
-###POST: create student
+### POST: create student
 http://localhost:8080/student-management-system/api/v1/student
-###PUT  update student
+### PUT  update student
 http://localhost:8080/student-management-system/api/v1/student	           
-###DELETE student by id
+### DELETE student by id
 http://localhost:8080/student-management-system/api/v1/student/{id}
-###PATCH: update student email
+### PATCH: update student email
 http://localhost:8080/student-management-system/api/v1/student/{id}
 
 
-####create json Format :
+#### create json Format :
 {
 "firstName": " your first name",
 "lastName": "your last name",
@@ -25,7 +25,7 @@ http://localhost:8080/student-management-system/api/v1/student/{id}
 "phoneNumber": "your phone number"
 }
 
-####update json Format :
+#### update json Format :
 {
 "firstName": " your first name",
 "lastName": "your last name",
