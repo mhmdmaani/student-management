@@ -29,7 +29,7 @@ public class StudentRest {
             return Response.ok(student).build();
         }catch (Exception ex){
             throw new WebApplicationException(Response.status(Response.Status.NOT_FOUND)
-                    .entity  ("Email is alrady used or name is missing " ).type(MediaType.TEXT_PLAIN_TYPE).build());
+                    .entity  ("Email is already used or name is missing "+ex.getMessage() ).type(MediaType.TEXT_PLAIN_TYPE).build());
         }
     }
 
@@ -53,9 +53,9 @@ public class StudentRest {
         return Response.ok(foundStudents).build();
     }
 
-    @Path("getbylastname")
+    @Path("lastname")
     @GET
-    public Response getBylastName(@QueryParam("lastName") String lastName) {
+    public Response getByLastName(@QueryParam("lastName") String lastName) {
 
         List<Student> result= studentService.getByLastName(lastName);
         if (result.size()<=0) {
@@ -76,7 +76,7 @@ public class StudentRest {
             return Response.ok(student).build();
         }catch (Exception ex){
             throw new WebApplicationException(Response.status(Response.Status.NOT_FOUND)
-                    .entity  ("Email is alrady used or Something is missing " ).type(MediaType.TEXT_PLAIN_TYPE).build());
+                    .entity  ("Email is already used or Something is missing " ).type(MediaType.TEXT_PLAIN_TYPE).build());
         }
     }
 
