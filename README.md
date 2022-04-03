@@ -1,24 +1,31 @@
 # student-management-system
 
-osama khalili
+##Mohammad Naim Almani
+###GET all students
+http://localhost:8080/student-management-system/api/v1/student	              
+###Get student by his last name 
+http://localhost:8080/student-management-system/api/v1/student/lastname
+###GET student by id
+http://localhost:8080/student-management-system/api/v1/student/{id}
+###POST: create student
+http://localhost:8080/student-management-system/api/v1/student
+###PUT  update student
+http://localhost:8080/student-management-system/api/v1/student	           
+###DELETE student by id
+http://localhost:8080/student-management-system/api/v1/student/{id}
+###PATCH: update student email
+http://localhost:8080/student-management-system/api/v1/student/{id}
 
-http://localhost:8080/student-management-system/api/v1/student/{id}	            DELETE student by id 
 
-http://localhost:8080/student-management-system/api/v1/student/{id}	            GET student by id
+####create json Format :
+{
+"firstName": " your first name",
+"lastName": "your last name",
+"email": "you@exemple.com",
+"phoneNumber": "your phone number"
+}
 
-http://localhost:8080/student-management-system/api/v1/student/{id}	            PATCH ( update email )
-
-http://localhost:8080/student-management-system/api/v1/student	                GET all students
-
-http://localhost:8080/student-management-system/api/v1/student	                POST create student 
-
-http://localhost:8080/student-management-system/api/v1/student	                PUT  updat student 
-
-http://localhost:8080/student-management-system/api/v1/student/getbylastname	  GET  student by last name 
-
-
-json file: 
-
+####update json Format :
 {
 "firstName": " your first name",
 "lastName": "your last name",
